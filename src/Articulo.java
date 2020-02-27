@@ -7,4 +7,9 @@ public class Articulo extends Producto {
 		this.saldo = 10;
 	}
 	
+	@Override
+	public int calcularTarifa() {
+		int tarifa=precio*saldo;
+		return tarifa;
+	}
 }

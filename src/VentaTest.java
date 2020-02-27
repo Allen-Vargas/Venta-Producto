@@ -33,4 +33,16 @@ public class VentaTest {
 		Producto producto = new Servicio("Masaje", 10);
 		Assert.assertEquals("Masaje", producto.getName());
 	}
+	
+	@Test
+	public void debeRetornarLaTarifaDelArticulo() {
+		Producto producto = new Articulo("CocaCola", 7);
+		Assert.assertEquals(70, producto.calcularTarifa());
+	}
+	
+	@Test
+	public void debeRetornarLaTarifaDeUnServicio() {
+		Producto producto = new Servicio("AutoCar", 20);
+		Assert.assertEquals(20, producto.calcularTarifa());
+	}
 }

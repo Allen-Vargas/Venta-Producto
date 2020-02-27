@@ -17,6 +17,6 @@ public class Producto {
 	}
 	
 	public int calcularTarifa() {
-		return 0;
+		return precio;
 	}
 }
