@@ -7,9 +7,14 @@ public class VentaTest {
 
 	@Test
 	public void debeRetornarElnombreDelProducto() {
-		Producto producto = new Producto();
-		String name="";
-		Assert.assertEquals(name, producto.getName());
+		Producto producto = new Producto("");
+		Assert.assertEquals("", producto.getName());
+	}
+	
+	@Test
+	public void debeRetornarElnombreDelProductorRefresco() {
+		Producto producto = new Producto("CocaCola");
+		Assert.assertEquals("CocaCola", producto.getName());
 	}
 
 }

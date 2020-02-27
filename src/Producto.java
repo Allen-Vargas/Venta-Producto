@@ -1,8 +1,12 @@
 
 public class Producto {
-
-	public String getName() {
-		return "";
+	private String name;
+	
+	public Producto(String name) {
+		this.name = name;
 	}
-
+	
+	public String getName() {
+		return name;
+	}
 }
