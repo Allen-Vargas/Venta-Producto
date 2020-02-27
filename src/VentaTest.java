@@ -23,8 +23,14 @@ public class VentaTest {
 	}
 	
 	@Test
-	public void debeRetornarElNombreDelArtculo() {
+	public void debeRetornarElNombreDelArticulo() {
 		Producto producto = new Articulo("Sprite", 10);
 		Assert.assertEquals("Sprite", producto.getName());
+	}
+	
+	@Test
+	public void debeRetornarElNombreDelServicio() {
+		Producto producto = new Servicio("Masaje", 10);
+		Assert.assertEquals("Masaje", producto.getName());
 	}
 }
