@@ -21,4 +21,10 @@ public class VentaTest {
 		Producto producto = new Producto("CocaCola", 10);
 		Assert.assertEquals(10, producto.getPrecio());
 	}
+	
+	@Test
+	public void debeRetornarElNombreDelArtculo() {
+		Producto producto = new Articulo("Sprite", 10);
+		Assert.assertEquals("Sprite", producto.getName());
+	}
 }
